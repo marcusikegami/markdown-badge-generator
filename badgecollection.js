@@ -296,6 +296,7 @@ let arr = [
     '![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)',
     'Buefy',
     '![Buefy](https://img.shields.io/badge/Buefy-7957D5?style=for-the-badge&logo=buefy&logoColor=48289E)',
+    'Chakra',
     '![Chakra](https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white)',
     'Chart.js',
     '![Chart.js](https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white)',
@@ -350,6 +351,7 @@ let arr = [
     'NestJS',
     '![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)',
     'Next JS',
+    '![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)',
     'Node.js',
     '![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)',
     'Nuxt JS',
@@ -435,6 +437,7 @@ let arr = [
     'EA',
     '![EA](https://img.shields.io/badge/ea-%23000000.svg?style=for-the-badge&logo=ea&logoColor=white)',
     'Epic Games',
+    '![Epic Games](https://img.shields.io/badge/epicgames-%23313131.svg?style=for-the-badge&logo=epicgames&logoColor=white)',
     'Godot Engine',
     '![Godot Engine](https://img.shields.io/badge/GODOT-%23FFFFFF.svg?style=for-the-badge&logo=godot-engine)',
     'Humble Bundle',
@@ -539,7 +542,6 @@ let arr = [
     '![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)',
     'NetBeans IDE',
     '![NetBeans IDE](https://img.shields.io/badge/NetBeansIDE-1B6AC6.svg?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white)',
-    'P5js Editor',
     'PhpStorm',
     '![PhpStorm](https://img.shields.io/badge/phpstorm-143?style=for-the-badge&logo=phpstorm&logoColor=black&color=black&labelColor=darkorchid)',
     'PyCharm',
@@ -728,7 +730,6 @@ let arr = [
     '![Openwrt](https://img.shields.io/badge/OpenWrt-00B5E2?style=for-the-badge&logo=OpenWrt&logoColor=white)',
     'OpenBSD',
     '![OpenBSD](https://img.shields.io/badge/-OpenBSD-%23FCC771?style=for-the-badge&logo=openbsd&logoColor=black)',
-    'Pop! OS',
     'Red Hat',
     '![Red Hat](https://img.shields.io/badge/Red%20Hat-EE0000?style=for-the-badge&logo=redhat&logoColor=white)',
     'Rocky Linux',
@@ -741,7 +742,6 @@ let arr = [
     '![Tails](https://img.shields.io/badge/Tails%20-56347C?&style=for-the-badge&logo=tails&logoColor=white)',
     'Ubuntu',
     '![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)',
-    'Wear OS',
     'Windows',
     '![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)',
     'Windows 95',
@@ -944,7 +944,6 @@ let arr = [
     '![Facebook Gaming](https://img.shields.io/badge/Facebook%20Gaming-015BE5?style=for-the-badge&logo=facebookgaming&logoColor=white)',
     'Facebook Live',
     '![Facebook Live](https://img.shields.io/badge/Facebook%20Live-ED4242?style=for-the-badge&logo=Facebook%20Live&logoColor=white)',
-    'Fire TV',
     'Hulu',
     '![Hulu](https://img.shields.io/badge/hulu-1CE783?style=for-the-badge&logo=hulu&logoColor=white)',
     'Netflix',
@@ -1025,11 +1024,12 @@ function keyValue(arr) {
     let array = [];
     for (let i = 0; i < arr.length; i += 2) {
         let obj = {
-            name: "",
-            badge: ""
+            name: arr[i],
+            badge: arr[i-1]
         }
+        array.push(obj);
     }
-    
+    return array;
 }
 let list = keyValue(arr);
 

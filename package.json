@@ -1,5 +1,6 @@
 {
   "name": "markdown-badge-generator",
+  "homepage": "http://marcusikegami.github.io/markdown-badge-generator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

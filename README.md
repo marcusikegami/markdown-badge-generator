@@ -18,7 +18,7 @@ No installation is necessary, rather, navigate to the GitHub Pages link here:
 
 ## Usage
 
-This software is intended to be used to find and copy either a markdown snippet or URL of a brand's For The Badge supported by Shields.io
+This software is intended to be used to find and copy either a markdown snippet or URL of a brand's For The Badge supported by Shields.io.
 
 ## Questions
 

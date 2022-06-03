@@ -1,11 +1,13 @@
-import './App.css';
-import Header from './components/Header';
+
 import Search from './components/Search';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <header>
+        <h1>Markdown Badge Generator</h1>
+      </header>
+      <a className='repoLink' href='https://github.com/Ileriayo/markdown-badges'>Link to Ileriayo Adebiyi's GitHub Repo</a>
       <Search />
     </div>
   );

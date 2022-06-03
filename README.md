@@ -1,6 +1,6 @@
 
 # Markdown Badge Generator
-[![License](https://img.shields.io/github/license/marcusikegami/markdown-bage-generator)](LICENSE.txt) 
+[![License](https://img.shields.io/github/license/marcusikegami/markdown-badge-generator)](LICENSE.txt) 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 ## Table of Contents

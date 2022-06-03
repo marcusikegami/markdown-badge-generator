@@ -26,8 +26,8 @@ function Search() {
                         <div className="grid-item">
                             <img src={element.link} alt={element.name} />
                             <div className="btn">
-                            <button title={element.badge} onClick={ ()=> navigator.clipboard.writeText(element.badge)}>MD</button>
-                            <button title={element.link} onClick={ () => navigator.clipboard.writeText(element.link)}>Link</button>
+                            <button className="mdBtn" title={element.badge} onClick={ ()=> navigator.clipboard.writeText(element.badge)}>MD</button>
+                            <button className="linkBtn" title={element.link} onClick={ () => navigator.clipboard.writeText(element.link)}>Link</button>
                             </div>
                         </div>
                     )

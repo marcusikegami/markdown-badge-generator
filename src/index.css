@@ -12,17 +12,41 @@ body {
   margin: 0 auto 0 auto;
   text-align: center;
 }
+
+.headerWrapper {
+  background-color: white;
+  top: 0;
+  position: sticky;
+}
 header {
   display: flex;
+  flex-direction: column;
   align-content: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
+  
 }
 
 .repoLink {
-  display: block;
-  padding-top: 1rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.repoLink a {
+  background-color: limegreen;
+  border-radius: 5px;
+  padding: 0.6%;
+  color: white;
+  text-decoration: none;
+}
+
+.repoLink a:hover {
+  background-color: rgb(85, 227, 85);
+}
+
+.repoLink a:visited {
+  text-decoration: none;
 }
 
 .search-section {
@@ -33,7 +57,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5% 0 5% 0;
+  padding: 2.5% 0 2.5% 0;
+  
 }
 .search-wrapper input {
   width: 50%;
@@ -59,17 +84,40 @@ header {
 
   .mdBtn {
     background-color: limegreen;
+    border-radius: 4px;
+    outline: none;
   }
   
   .linkBtn {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
+    border-radius: 4px;
+    outline: none;
   }
 
+  .mdBtn:hover {
+    background-color: rgba(50, 205, 50, 0.695);
+  }
+
+  .linkBtn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  @media screen and (max-width: 650px) {
+    header h1{
+        font-size: 20px;
+      }
+    .search-wrapper input {
+      width: 80%;
+      height: 1.5rem
+    }
+  }
 
   @media screen and (min-width: 500px) {
+    
     .badge-grid {
       margin: 0 4% 0 4%
     }
+
   }
 
